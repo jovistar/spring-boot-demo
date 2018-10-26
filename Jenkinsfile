@@ -12,7 +12,7 @@ pipeline {
 
         stage('Build-Image') {
             steps {
-                sh 'docker build . -t 192.168.200.209:5000/wondersoft/demo:${env.BUILD_ID}'
+                sh 'docker build . -t 192.168.200.209:5000/wondersoft/demo:${env.BUILD_ID} --build-arg jar_path=${env.WORKSPACE}'
             }
         }
 
