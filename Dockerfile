@@ -6,7 +6,7 @@ LABEL maintainer "lijinghua@wodnersoft.cn"
 
 VOLUME [ "/tmp" ]
 
-ADD jar_path/target/demo-0.0.1-SNAPSHOT.jar demo.jar
+ADD ${jar_path}/target/demo-0.0.1-SNAPSHOT.jar demo.jar
 RUN bash -c "touch /demo.jar"
 
 EXPOSE 8080
