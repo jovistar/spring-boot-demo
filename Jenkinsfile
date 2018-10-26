@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build-Package') {
             steps {
-                mvn -B -DskipTests clean package
+                mvn package
             }
         }
 
