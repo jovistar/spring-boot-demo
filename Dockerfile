@@ -1,6 +1,6 @@
 FROM openjdk:8-alpine
 
-ARG jar_path
+ARG jar_path=/root
 
 LABEL maintainer "lijinghua@wodnersoft.cn"
 
